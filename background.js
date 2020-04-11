@@ -14,7 +14,8 @@ function parsePageDocument(pageDocument) {
     let container = document.createElement("div");
 
     // remove all SRCs from Images to avoid net::ERR_FILE_NOT_FOUND
-    pageDocument = pageDocument.replace(new RegExp("src=.[^\'\"]*.", "g"), "");
+    pageDocument = pageDocument.replace(
+                        new RegExp("(src=|xlink:href=).[^\'\"]*.", "g"), "");
     container.innerHTML = pageDocument;
 
     return container;
