@@ -3,7 +3,7 @@
     "name": "Fine Print",
     "short_name": "Fine Print",
     "description": "Chrome Extension for Improving Printed Version of Popular Online Websites",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
         "128": "icon/default.png"
     },
