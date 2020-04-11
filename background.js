@@ -120,7 +120,7 @@ chrome.runtime.onMessage.addListener((page, sender, sendResponse) => {
 
     page.document = parsePageDocument(page.document);
     
-    let tabId = sender.tab.tabId;
+    let tabId = sender.tab.id;
 
     if (!cacheExists(tabId) || !cacheValid(tabId, page)) {
         /*
