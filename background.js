@@ -61,10 +61,9 @@ function deleteCacheIfExists(tabId) {
 
 function cacheExists(tabId, callback) {
     let exists = (getCache(tabId) != undefined);
-    let _callback = callback || undefined;
 
-    if (_callback) {
-        _callback(exists, getCache(tabId));
+    if (callback) {
+        callback(exists, getCache(tabId));
     } else {
         return exists;
     }
