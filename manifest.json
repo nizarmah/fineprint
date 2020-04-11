@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Fine Print",
+    "short_name": "Fine Print",
+    "description": "Chrome Extension for Improving Printed Version of Popular Online Websites",
+    "version": "1.0.0",
+    "icons": {
+        "128": "icon/default.png"
+    },
+    "background": {
+        "scripts": [ 
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "web_accessible_resources": [],
+    "permissions": []
+}
