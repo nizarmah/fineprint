@@ -9,10 +9,23 @@
     },
     "background": {
         "scripts": [ 
+            "validator.js",
+            "page_rules.js",
             "background.js"
         ],
         "persistent": false
     },
-    "web_accessible_resources": [],
+    "web_accessible_resources": [
+        "css/*"
+    ],
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [ "<all_urls>" ],
+            "js": [
+                "injector.js"
+            ]
+        }
+    ],
     "permissions": []
 }

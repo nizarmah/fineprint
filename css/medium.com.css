@@ -1,0 +1,12 @@
+@media print {
+	figure.paragraph-image {
+	    page-break-inside: avoid !important;
+	    page-break-before: auto !important;
+	}
+
+	.tu.r.tv.tw,
+	.ot.hc.n.dg.p,
+	section.dl.dm.dn.do.dp:last-child {
+	    display: none !important;
+	}
+}
