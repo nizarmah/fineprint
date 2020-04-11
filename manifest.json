@@ -13,6 +13,10 @@
         ],
         "persistent": false
     },
-    "web_accessible_resources": [],
-    "permissions": []
+    "web_accessible_resources": [
+        "css/*"
+    ],
+    "permissions": [
+        "declarativeContent"
+    ]
 }
