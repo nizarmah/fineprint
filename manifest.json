@@ -9,11 +9,15 @@
     },
     "background": {
         "scripts": [ 
-            "validator.js",
             "page_rules.js",
+            "validator.js",
             "background.js"
         ],
         "persistent": false
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
     },
     "web_accessible_resources": [
         "css/*"

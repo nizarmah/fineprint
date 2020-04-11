@@ -1,6 +1,7 @@
 
 var pageRules = [
     new Rule({
+        name: "medium websites",
         conditions: [
             new Condition({
                 css: [
@@ -36,6 +37,8 @@ function Rule(rule) {
     this.getCssFiles = function () {
         return this.cssFiles;
     };
+
+    this.disabled = rule.disabled || false;
 }
 
 function getRule(ruleIndex) {
