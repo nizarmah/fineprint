@@ -6,6 +6,11 @@ var pageRules = [
                 css: [
                     "a[href^='https://medium.com/'][aria-label='Homepage']"
                 ]
+            }),
+            new Condition({
+                css: [
+                    "meta[property='og:site_name'][content='Medium']"
+                ]
             })
         ],
         cssFiles: [
