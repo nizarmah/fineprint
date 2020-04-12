@@ -4,7 +4,7 @@ var page_rules = [
         conditions: [
             new chrome.declarativeContent.PageStateMatcher({
                 css: [
-                    "a[href^='https://medium.com/'][aria-label='Homepage']"
+                    "meta[property='og:site_name'][content='Medium']"
                 ]
             })
         ],
