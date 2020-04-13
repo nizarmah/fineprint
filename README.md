@@ -1,6 +1,8 @@
 # fineprint
 Chrome Extension for Improving Printed Version of Popular Online Websites
 
+> ###### Extension is still _pending review_ on the chrome web store
+
 ### How to Use
 
 1. Just install the extension from the chrome web store
