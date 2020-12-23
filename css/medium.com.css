@@ -5,7 +5,8 @@
 	    page-break-before: auto !important;
 	}
 
-	div#root > div > :not(article) {
+	div#root > div > div.s > :not(article),
+	article > :not(div) {
 	    display: none !important;
 	}
 }
